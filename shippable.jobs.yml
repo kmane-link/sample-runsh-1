@@ -6,4 +6,4 @@ jobs:
       - IN: triggertest01
       - IN: test-trigger01
       - TASK:
-        - script: IN/sample-script-01/gitRepo/echo.sh
+        - script: IN/sample-script-012/gitRepo/echo.sh
