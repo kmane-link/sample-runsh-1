@@ -1,11 +1,11 @@
 resources:
-  - name: sample-script-01
+  - name: sample-script-012
     type: gitRepo
     integration: github
     pointer:
       sourceName: shiptestlink/sample-script-3
       branch: master
-  - name: test-trigger
+  - name: test-trigger01
     type: time
     seed:
       interval: "*/4 * * * *"
