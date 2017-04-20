@@ -3,5 +3,5 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: RevathiRD/sample-script
+      sourceName: shiptestlink/sample-script-3
       branch: master
