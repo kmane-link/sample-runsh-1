@@ -2,8 +2,8 @@ jobs:
   - name: sample-runsh
     type: runSh
     steps:
-      - IN: sample-script-01
-      - IN: triggertest1
-      - IN: test-trigger
+      - IN: sample-script-012
+      - IN: triggertest01
+      - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-01/gitRepo/echo.sh
