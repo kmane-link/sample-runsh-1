@@ -5,3 +5,7 @@ resources:
     pointer:
       sourceName: shiptestlink/sample-script-3
       branch: master
+  - name: test-trigger
+    type: time
+    seed:
+      interval: "*/4 * * * *"
