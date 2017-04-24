@@ -6,4 +6,4 @@ triggers:
   - name: trigger02
     type: trigger
     version:
-      fffountvhbjer: 0
+      counter: 0
