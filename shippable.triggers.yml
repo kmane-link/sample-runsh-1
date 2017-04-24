@@ -5,5 +5,5 @@ triggers:
       counter: 0
   - name: trigger02
     type: trigger
-    #version:
+    version:
       counter: 0
