@@ -1,6 +1,6 @@
 jobs:
   - name: sample-runsh01
-   # type: runSh
+    type: runSh
     steps:
       - IN: sample-script-012
       - IN: trigger01
