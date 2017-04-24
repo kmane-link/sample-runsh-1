@@ -9,3 +9,4 @@ resources:
     type: time
     seed:
       interval: "*/4 * * * *"
+    flags: t1
