@@ -10,3 +10,8 @@ resources:
     seed:
       interval: "*/4 * * * *"
     flags: t1
+  - name: test-trigger03
+    type: time
+    seed:
+      interval: "*/9 * * * *"
+    flags: t3
