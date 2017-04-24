@@ -4,6 +4,6 @@ triggers:
     version:
       counter: 0
   - name: trigger02
-   # type: trigger
+    type: trigger
     version:
-      counter: 0
+     # counter: 0
