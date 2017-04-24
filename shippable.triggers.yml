@@ -7,3 +7,4 @@ triggers:
     type: trigger
     version:
       counter: 0
+    flags: t2
