@@ -3,7 +3,7 @@ triggers:
     type: trigger
     version:
       counter: 0
-  - name: trigger01
-    type: trigger
+  - name: trigger02
+   # type: trigger
     version:
       counter: 0
