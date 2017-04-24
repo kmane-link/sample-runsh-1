@@ -3,6 +3,7 @@ triggers:
     type: trigger
     version:
       counter: 1
+    flags: f1
   - name: trigger02
     type: trigger
     version:
