@@ -6,7 +6,7 @@ resources:
       sourceName: shiptestlink/sample-script-3
       branch: master
   - name: test-trigger01
-    type: timeww
+    type: time
     seed:
       interval: "*/4 * * * *"
     flags: t1
