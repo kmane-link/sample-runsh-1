@@ -1,6 +1,6 @@
 triggers:
   - name: trigger01
-    #type: trigger
+    type: trigger
     version:
       counter: 1
     flags: f1
