@@ -8,3 +8,4 @@ jobs:
       - TASK:
         - script: IN/sample-script-012/gitRepo/echo.sh
     flags: job1
+    allowPublicAccess: true
