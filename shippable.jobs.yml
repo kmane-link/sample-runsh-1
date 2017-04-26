@@ -1,7 +1,7 @@
 jobs:
   - name: sample-runsh018
     type: runSh
-    allowPublicAccess: false
+    allowPublicAcvvvvccess: false
     steps:
       - IN: sample-script-012
       - IN: trigger01
