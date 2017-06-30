@@ -4,6 +4,7 @@ jobs:
     allowPublicAccess: false
     steps:
       - IN: sample-script-012
+        showBuildStatus: true
       - IN: trigger01
     #  - IN: test-trigger01
       - TASK:
