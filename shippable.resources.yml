@@ -5,6 +5,9 @@ resources:
     pointer:
       sourceName: shiptestlink/sample-script-3
       branch: master
+      buildOnPullRequest: true  
+      buildOnRelease: true                  #optional
+      buildOnTagPush: true
   - name: test-trigger01
     type: time
     seed:
