@@ -33,6 +33,7 @@ jobs:
       - IN: sample-runsh-1
       - IN: sample-runsh-2
       - IN: sample-script-012
+      - OUT: sample-img
       - IN: trigger02
         showBuildStatus: true
      # - IN: trigger01
