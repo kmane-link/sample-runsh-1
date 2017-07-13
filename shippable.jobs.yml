@@ -29,9 +29,9 @@ jobs:
     type: runSh
     allowPublicAccess: false
     steps:
-      - IN: sample-script-0
-      - IN: sample-script-1
-      - IN: sample-script-2
+      - IN: sample-runsh-0
+      - IN: sample-runsh-1
+      - IN: sample-runsh-2
       #- IN: sample-runsh017
       - IN: trigger02
         showBuildStatus: true
