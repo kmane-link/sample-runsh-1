@@ -33,7 +33,7 @@ jobs:
       - IN: sample-runsh-1
       - IN: sample-runsh-2
       #- IN: sample-runsh017
-      - IN: trigger03
+      - IN: trigger02
         showBuildStatus: true
      # - IN: trigger01
     #  - IN: test-trigger01
@@ -65,7 +65,7 @@ jobs:
     steps:
       - IN: sample-script-0
         showBuildStatus: true
-      - IN: trigger01
+      - IN: trigger03
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-0/gitRepo/echo.sh
@@ -77,7 +77,7 @@ jobs:
     steps:
       - IN: sample-script-1
         showBuildStatus: true
-      - IN: trigger01
+      - IN: trigger03
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-1/gitRepo/echo.sh
@@ -87,7 +87,7 @@ jobs:
     steps:
       - IN: sample-script-2
         showBuildStatus: true
-      - IN: trigger01
+      - IN: trigger03
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-2/gitRepo/echo.sh      
