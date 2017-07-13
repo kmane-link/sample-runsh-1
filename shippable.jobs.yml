@@ -17,6 +17,7 @@ jobs:
       - IN: sample-script-012
       - IN: sample-runsh018
       - IN: runcliscript
+      - IN: sample-runsh017
         showBuildStatus: true
      # - IN: trigger01
     #  - IN: test-trigger01
@@ -28,5 +29,15 @@ jobs:
     steps:      
       - IN: sample-script-012 
       - IN: trigger01
+      - TASK:
+        - script: IN/sample-script-012/gitRepo/echo.sh
+  - name: sample-runsh017
+    type: runSh
+    allowPublicAccess: false
+    steps:
+      - IN: sample-script-012
+        showBuildStatus: true
+      - IN: trigger01
+    #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-012/gitRepo/echo.sh
