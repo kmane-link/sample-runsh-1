@@ -23,7 +23,7 @@ triggers:
   - name: trigger05
     type: trigger
     version:
-      counter: 77
+      counter: 70
        
     
  
