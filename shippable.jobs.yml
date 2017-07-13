@@ -33,7 +33,8 @@ jobs:
       - IN: sample-runsh-1
       - IN: sample-runsh-2
       - IN: sample-script-012
-      - OUT: sample-img
+      - OUT: sample_img
+      - OUT: sample-runsh-out
       - IN: trigger02
         showBuildStatus: true
      # - IN: trigger01
@@ -49,6 +50,17 @@ jobs:
       - TASK:
         - script: IN/sample-script-011/gitRepo/echo.sh
   - name: sample-runsh017
+    type: runSh
+    allowPublicAccess: false
+    steps:
+      - IN: sample-script-010
+        showBuildStatus: true
+      - IN: trigger01
+    #  - IN: test-trigger01
+      - TASK:
+        - script: IN/sample-script-010/gitRepo/echo.sh
+        
+  - name: sample-runsh-out
     type: runSh
     allowPublicAccess: false
     steps:
