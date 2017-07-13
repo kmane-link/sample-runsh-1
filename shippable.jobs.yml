@@ -66,7 +66,7 @@ jobs:
     allowPublicAccess: false
     steps:
       - IN: sample-script-010
-      - IN: 
+      - IN: release-dev2
         showBuildStatus: true
       - IN: trigger01
     #  - IN: test-trigger01
