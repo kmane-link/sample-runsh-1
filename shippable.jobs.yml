@@ -95,7 +95,7 @@ jobs:
       - IN: trigger03
     #  - IN: test-trigger01
       - TASK:
-        - script: IN/sample-script-1/gitRepoddd/echo.sh
+        - script: IN/sample-script-1/gitRepo/echo.sh
   - name: sample-runsh-2
     type: runSh
     allowPublicAccess: false
