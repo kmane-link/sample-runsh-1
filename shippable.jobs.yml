@@ -24,6 +24,21 @@ jobs:
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-012/gitRepo/echo.sh  
+        
+  - name: release-dev2
+    type: runSh
+    allowPublicAccess: false
+    steps:
+      - IN: sample-script-0
+      - IN: sample-script-1
+      - IN: sample-script-2
+      #- IN: sample-runsh017
+      - IN: trigger02
+        showBuildStatus: true
+     # - IN: trigger01
+    #  - IN: test-trigger01
+      - TASK:
+        - script: IN/sample-script-0/gitRepo/echo.sh  
   - name: runcliscript
     type: runCLI
     allowPublicAccess: false
@@ -42,3 +57,40 @@ jobs:
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-010/gitRepo/echo.sh
+        
+        
+  - name: sample-runsh-0
+    type: runSh
+    allowPublicAccess: false
+    steps:
+      - IN: sample-script-0
+        showBuildStatus: true
+      - IN: trigger01
+    #  - IN: test-trigger01
+      - TASK:
+        - script: IN/sample-script-0/gitRepo/echo.sh
+        
+        
+  - name: sample-runsh-1
+    type: runSh
+    allowPublicAccess: false
+    steps:
+      - IN: sample-script-1
+        showBuildStatus: true
+      - IN: trigger01
+    #  - IN: test-trigger01
+      - TASK:
+        - script: IN/sample-script-1/gitRepo/echo.sh
+  - name: sample-runsh-2
+    type: runSh
+    allowPublicAccess: false
+    steps:
+      - IN: sample-script-2
+        showBuildStatus: true
+      - IN: trigger01
+    #  - IN: test-trigger01
+      - TASK:
+        - script: IN/sample-script-2/gitRepo/echo.sh      
+        
+        
+  
