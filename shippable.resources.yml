@@ -32,3 +32,28 @@ resources:
     seed:
       interval: "*/9 * * * *"
     flags: t3
+  - name: sample-script-0
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptestlink/sample-script-3
+      branch: master
+      buildOnPullRequest: true  
+      buildOnRelease: true                  #optional
+      buildOnTagPush: true
+      
+  - name: sample-script-1
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptestlink/sample-script-2
+      branch: master
+      
+  - name: sample-script-2
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptestlink/sample-script-1
+      branch: master
+      
+      
