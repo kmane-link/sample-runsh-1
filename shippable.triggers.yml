@@ -10,7 +10,12 @@ triggers:
     version:
       counter: 3
     flags: f1
- # - name: trigger02
+    
+  - name: trigger03
+    type: trigger
+    version:
+      counter: 3
+    
  #   type: trigger
  #   version:
    #   counter: 0
