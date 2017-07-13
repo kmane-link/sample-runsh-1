@@ -18,7 +18,7 @@ jobs:
       - IN: sample-runsh018
       - IN: runcliscript
       - IN: sample-runsh017
-      - IN: testman1
+      #- IN: testman1
       - IN: trigger02
         showBuildStatus: true
      # - IN: trigger01
@@ -34,7 +34,7 @@ jobs:
       - IN: sample-runsh-1
       - IN: sample-runsh-2
       - IN: sample-script-012
-      - IN: testman2
+      #- IN: testman2
       - OUT: sample_img
      # - OUT: sample-runsh-out
       - IN: trigger05
@@ -109,16 +109,6 @@ jobs:
       - TASK:
         - script: IN/sample-script-2/gitRepo/echo.sh    
         
-  - name: testman1
-    type: manifest
-    steps:
-      - IN: sample_img
-      
-  - name: testman2
-    type: manifest
-    steps:
-      - IN: sample_img
-      
-        
+  
         
   
