@@ -68,7 +68,7 @@ jobs:
       - IN: sample-script-010
       - IN: release-dev2
         showBuildStatus: true
-      - IN: trigger01
+      - IN: trigger04
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-010/gitRepo/echo.sh
