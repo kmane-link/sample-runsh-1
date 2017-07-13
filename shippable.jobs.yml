@@ -18,6 +18,7 @@ jobs:
       - IN: sample-runsh018
       - IN: runcliscript
       - IN: sample-runsh017
+      - IN: trigger02
         showBuildStatus: true
      # - IN: trigger01
     #  - IN: test-trigger01
