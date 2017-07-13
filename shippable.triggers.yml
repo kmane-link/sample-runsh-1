@@ -18,7 +18,7 @@ triggers:
   - name: trigger04
     type: trigger
     version:
-      counter: 6
+      counter: 54
       
   - name: trigger05
     type: trigger
