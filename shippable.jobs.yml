@@ -34,7 +34,7 @@ jobs:
       - IN: sample-runsh-2
       - IN: sample-script-012
       - OUT: sample_img
-      - OUT: sample-runsh-out
+     # - OUT: sample-runsh-out
       - IN: trigger02
         showBuildStatus: true
      # - IN: trigger01
@@ -56,6 +56,7 @@ jobs:
       - IN: sample-script-010
         showBuildStatus: true
       - IN: trigger01
+      - IN: release-dev2
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-010/gitRepo/echo.sh
@@ -65,6 +66,7 @@ jobs:
     allowPublicAccess: false
     steps:
       - IN: sample-script-010
+      - IN: 
         showBuildStatus: true
       - IN: trigger01
     #  - IN: test-trigger01
