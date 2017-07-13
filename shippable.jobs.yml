@@ -32,13 +32,13 @@ jobs:
       - IN: sample-runsh-0
       - IN: sample-runsh-1
       - IN: sample-runsh-2
-      #- IN: sample-runsh017
+      - IN: sample-script-012
       - IN: trigger02
         showBuildStatus: true
      # - IN: trigger01
     #  - IN: test-trigger01
       - TASK:
-        - script: IN/sample-script-0/gitRepo/echo.sh  
+        - script: IN/sample-script-012/gitRepo/echo.sh  
   - name: runcliscript
     type: runCLI
     allowPublicAccess: false
