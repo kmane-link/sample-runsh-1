@@ -8,6 +8,20 @@ resources:
       buildOnPullRequest: true  
       buildOnRelease: true                  #optional
       buildOnTagPush: true
+      
+  - name: sample-script-011
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptestlink/sample-script-2
+      branch: master
+      
+  - name: sample-script-010
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptestlink/sample-script-1
+      branch: master
   - name: test-trigger01
     type: time
     seed:
