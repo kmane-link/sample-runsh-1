@@ -4,6 +4,12 @@ triggers:
     version:
       counter: 2
     flags: f1
+    
+  - name: trigger02
+    type: trigger
+    version:
+      counter: 2
+    flags: f1
  # - name: trigger02
  #   type: trigger
  #   version:
