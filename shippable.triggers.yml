@@ -8,7 +8,7 @@ triggers:
   - name: trigger02
     type: trigger
     version:
-      counter: 4
+      counter: 5
     flags: f1
     
   - name: trigger03
