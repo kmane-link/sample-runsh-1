@@ -24,7 +24,7 @@ jobs:
      # - IN: trigger01
     #  - IN: test-trigger01
       - TASK:
-        - script: IN/sample-script-012/gitRepopkjn/echo.sh  
+        - script: IN/sample-script-012/gitRepo/echo.sh  
         
   - name: release-dev2
     type: runSh
@@ -61,7 +61,7 @@ jobs:
      # - IN: release-dev2
     #  - IN: test-trigger01
       - TASK:
-        - script: IN/sample-script-010/gitRepo/echo.sh
+        - script: IN/sample-script-010/gitRepouuuu/echo.sh
         
   - name: sample-runsh-out
     type: runSh
