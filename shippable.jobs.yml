@@ -47,7 +47,7 @@ jobs:
     type: runCLI
     allowPublicAccess: false
     steps:      
-      - IN: sample-script-0110
+      - IN: sample-script-011
       - IN: trigger01
       - TASK:
         - script: IN/sample-script-011/gitRepo/echo.sh
