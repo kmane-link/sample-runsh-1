@@ -107,7 +107,14 @@ jobs:
       - IN: trigger03
     #  - IN: test-trigger01
       - TASK:
-        - script: IN/sample-script-2/gitRepo/echo.sh    
+        - script: IN/sample-script-2/gitRepo/echo.sh 
+        
+        
+  - name: testrepo_runCI      # required
+    type: runCI             # required
+    steps:                  # required
+      - IN: sample-script-010   # at least one IN or OUT required
+     # - OUT: <resourceName>
         
   
         
