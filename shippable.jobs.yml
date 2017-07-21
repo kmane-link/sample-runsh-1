@@ -113,7 +113,8 @@ jobs:
   - name: testrepo_runCI      # required
     type: runCI             # required
     steps:                  # required
-      - IN: sample-script-010   # at least one IN or OUT required
+      - IN: sample-script-010
+      - IN: release-dev # at least one IN or OUT required
      # - OUT: <resourceName>
         
   
