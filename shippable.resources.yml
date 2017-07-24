@@ -64,3 +64,12 @@ resources:
     seed:
       versionName: "deploy.2"
       
+      
+  - name: sample_img_out
+    type: image
+    integration: ship-docker
+    pointer:
+      sourceName: "shippabledocker/pipelinev2"
+    seed:
+      versionName: "deploy.2"
+      
