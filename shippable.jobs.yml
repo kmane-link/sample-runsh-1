@@ -117,6 +117,11 @@ jobs:
       - IN: release-dev # at least one IN or OUT required
      # - OUT: <resourceName>
         
+        
+  - name: testpr_runCI      # required
+    type: runCI             # required
+    steps:                  # required
+      - OUT: sample_img_out
   
         
   
