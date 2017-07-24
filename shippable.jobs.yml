@@ -128,6 +128,7 @@ jobs:
     type: runSh
     steps:
       - IN: sample_img_out
+      - IN: sample-script-2
         showBuildStatus: true
       #- IN: trigger03
     #  - IN: test-trigger01
