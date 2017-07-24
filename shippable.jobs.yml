@@ -122,6 +122,17 @@ jobs:
     type: runCI             # required
     steps:                  # required
       - OUT: sample_img_out
+      
+       - script: IN/sample-script-1/gitRepo/echo.sh
+  - name: sample-runsh-test
+    type: runSh
+    steps:
+      - IN: sample_img_out
+        showBuildStatus: true
+      #- IN: trigger03
+    #  - IN: test-trigger01
+      - TASK:
+        - script: IN/sample-script-2/gitRepo/echo.sh  
   
         
   
