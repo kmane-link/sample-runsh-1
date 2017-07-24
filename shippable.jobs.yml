@@ -118,7 +118,7 @@ jobs:
      # - OUT: <resourceName>
         
         
-  - name: testpr_runCI      # required
+  - name: tesrpr_runCI      # required
     type: runCI             # required
     steps:                  # required
       - OUT: sample_img_out
