@@ -123,7 +123,7 @@ jobs:
     steps:                  # required
       - OUT: sample_img_out
       
-       - script: IN/sample-script-1/gitRepo/echo.sh
+      
   - name: sample-runsh-test
     type: runSh
     steps:
