@@ -1,7 +1,7 @@
 jobs:
   - name: sample-runsh018
     type: runSh
-    allowPublicAccess: false
+    allowPublicAccess: true
     steps:
       - IN: sample-script-012
         showBuildStatus: true
