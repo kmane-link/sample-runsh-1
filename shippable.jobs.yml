@@ -134,6 +134,18 @@ jobs:
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-2/gitRepo/echo.sh  
+        
+  - name: sample-runsh-july26
+    type: runSh
+    allowPublicAccess: false
+    steps:
+      - IN: sample-script-010
+      - IN: release-dev2
+        showBuildStatus: true
+      - IN: trigger04
+    #  - IN: test-trigger01
+      - TASK:
+        - script: IN/sample-script-010/gitRepo/echo.sh
   
         
   
