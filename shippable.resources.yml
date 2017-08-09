@@ -57,7 +57,7 @@ resources:
       branch: master
       
   - name: sample_img
-    type: images
+    type: 12257
     integration: ship-docker
     pointer:
       sourceName: "shippabledocker/pipelinev2"
