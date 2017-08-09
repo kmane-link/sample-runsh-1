@@ -1,6 +1,6 @@
 resources:
   - name: sample-script-012
-    type: time
+    type: image
     integration: github
     pointer:
       sourceName: shiptestlink/sample-script-3
