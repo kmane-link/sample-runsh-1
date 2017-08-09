@@ -23,7 +23,7 @@ resources:
       sourceName: shiptestlink/sample-script-1
       branch: master
   - name: test-trigger01
-    type: time
+    type: gitRepo
     seed:
       interval: "*/4 * * * *"
     flags: t1
