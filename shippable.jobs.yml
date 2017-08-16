@@ -9,7 +9,7 @@ jobs:
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-012/gitRepo/echo.sh
-    flags: job1
+    flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard-tooltip-test-16
   - name: release-dev
     type: runSh
     allowPublicAccess: false
