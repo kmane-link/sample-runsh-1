@@ -8,7 +8,7 @@ resources:
       buildOnPullRequest: true  
       buildOnRelease: true                  #optional
       buildOnTagPush: true
-   
+    flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard-tooltip
   - name: sample-script-011
     type: gitRepo
     integration: github
