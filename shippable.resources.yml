@@ -8,8 +8,7 @@ resources:
       buildOnPullRequest: true  
       buildOnRelease: true                  #optional
       buildOnTagPush: true
-    seed:
-      versionName: "test"
+   
   - name: sample-script-011
     type: gitRepo
     integration: github
