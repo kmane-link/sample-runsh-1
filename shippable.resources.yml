@@ -73,11 +73,11 @@ resources:
       sourceName: "shippabledocker/pipelinev2"
     seed:
       versionName: "deploy.2"
-  - name: sample_img_dep
-    type: image
-    integration: ship-docker-test-delete
-    pointer:
-      sourceName: "shippabledocker/pipelinev2"
-    seed:
-      versionName: "deploy.2"
+ # - name: sample_img_dep
+ #   type: image
+  #  integration: ship-docker-test-delete
+   # pointer:
+    #  sourceName: "shippabledocker/pipelinev2"
+    #seed:
+    #  versionName: "deploy.2"
       
