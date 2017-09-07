@@ -110,18 +110,18 @@ jobs:
         - script: IN/sample-script-2/gitRepo/echo.sh 
         
         
-  - name: testrepo_runCI      # required
-    type: runCI             # required
-    steps:                  # required
-      - IN: sample-script-010
-      - IN: release-dev # at least one IN or OUT required
+  #- name: testrepo_runCI      # required
+  #  type: runCI             # required
+  #  steps:                  # required
+  #    - IN: sample-script-010
+  #    - IN: release-dev # at least one IN or OUT required
      # - OUT: <resourceName>
         
         
-  - name: tesrpr_runCI      # required
-    type: runCI             # required
-    steps:                  # required
-      - OUT: sample_img_out
+ # - name: tesrpr_runCI      # required
+  #  type: runCI             # required
+  #  steps:                  # required
+  #    - OUT: sample_img_out
       
       
   - name: sample-runsh-test
