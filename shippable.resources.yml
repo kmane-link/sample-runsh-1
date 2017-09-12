@@ -68,7 +68,7 @@ resources:
       
   - name: sample_img_out
     type: image
-    integration: ship-docker
+    integration: ship-docker2
     pointer:
       sourceName: "shippabledocker/pipelinev2"
     seed:
