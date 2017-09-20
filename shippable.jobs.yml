@@ -86,6 +86,7 @@ jobs:
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-0/gitRepo/echo.sh
+        - script: echo $SHIPPABLE_NODE_ARCHITECTURE
         
         
   - name: sample-runsh-1
