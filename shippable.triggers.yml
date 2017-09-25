@@ -20,7 +20,7 @@ triggers:
     version:
       counter: 502
       
-  - name: trigger05
+  - name: trigger0
     type: trigger
     version:
       counter: 79
