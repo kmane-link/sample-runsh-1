@@ -23,7 +23,7 @@ triggers:
   - name: trigger0
     type: trigger
     version:
-      counter: 79
+      counter: 0
        
     
  
