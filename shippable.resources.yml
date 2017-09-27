@@ -15,7 +15,7 @@ resources:
     pointer:
       sourceName: shiptestlink/sample-script-2
       branch: master
-    flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard-tooltip
+    flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard
       
   - name: sample-script-010
     type: gitRepo
