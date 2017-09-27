@@ -63,7 +63,7 @@ resources:
     pointer:
       sourceName: "shippabledocker/pipelinev2"
     seed:
-      versionName: "latest"
+      versionName: "deploy.2"
       
       
   - name: sample_img_out
@@ -72,7 +72,7 @@ resources:
     pointer:
       sourceName: "shippabledocker/pipelinev2"
     seed:
-      versionName: "deploy.2"
+      versionName: "latest"
       
       
   - name: sample-test-sep27
