@@ -79,8 +79,8 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiptestlink/sample-script-1
-      branch: master
+      sourceName: shiptestlink/sample-script-3
+      branch: test1
  # - name: sample_img_dep
  #   type: image
   #  integration: ship-docker-test-delete
