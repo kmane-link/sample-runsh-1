@@ -26,7 +26,7 @@ resources:
   - name: test-trigger01
     type: time
     seed:
-      interval: "*/4 * * * *"
+      interval: "*/5 * * * *"
     flags: t1
   - name: test-trigger03
     type: time
