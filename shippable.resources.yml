@@ -80,7 +80,7 @@ resources:
     integration: github
     pointer:
       sourceName: shiptestlink/sample-script-2
-      branch: test1
+      branch: master
  # - name: sample_img_dep
  #   type: image
   #  integration: ship-docker-test-delete
