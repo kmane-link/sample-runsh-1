@@ -75,7 +75,7 @@ resources:
       versionName: "deploy.2"
       
       
-  - name: sample-test
+  - name: sample-test-sep27
     type: gitRepo
     integration: github
     pointer:
