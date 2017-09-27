@@ -64,6 +64,7 @@ resources:
       sourceName: "shippabledocker/pipelinev2"
     seed:
       versionName: "deploy.2"
+    flags: dont-create-version
       
       
   - name: sample_img_out
