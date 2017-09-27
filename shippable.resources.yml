@@ -79,7 +79,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiptestlink/sample-script-3
+      sourceName: shiptestlink/sample-script-2
       branch: test1
  # - name: sample_img_dep
  #   type: image
