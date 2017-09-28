@@ -135,6 +135,7 @@ jobs:
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-2/gitRepo/echo.sh  
+    flags: test-sep27-add-new
         
   - name: sample-runsh-july26
     type: runSh
