@@ -44,6 +44,7 @@ jobs:
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-012/gitRepo/echo.sh  
+    flags: test-release-dev2
   - name: runcliscript
     type: runCLI
     allowPublicAccess: false
