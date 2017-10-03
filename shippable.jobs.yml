@@ -37,8 +37,7 @@ jobs:
       #- IN: testman2
       - OUT: sample_img
      # - OUT: sample-runsh-out
-      - IN: trigger05
-        showBuildStatus: true
+      
      # - IN: trigger01
     #  - IN: test-trigger01
       - TASK:
