@@ -92,6 +92,14 @@ resources:
   - name: test-jfrogartifactory
     type: cliConfig
     integration: "test-jfrogartifactory"
+    
+  - name: test-jfrogfile
+    type: file
+    integration: test-jfrogartifactory
+    pointer:
+      sourceName:  test-jfrog-ship/sample_file.tgz
+    
+   
    
  # - name: sample_img_dep
  #   type: image
