@@ -3,15 +3,15 @@ jobs:
     type: runSh
     allowPublicAccess: true
     steps:
-      - IN: ssample-testjf
+      - IN: sample-testjf
         showBuildStatus: true
-      - IN: trigger01
+      - IN: trigger-jf
       - IN: test-cli-jfrog
       #- IN: test-jfrogfile
     #  - IN: test-trigger01
       - TASK:
-        - script: IN/sample-script-012/gitRepo/echo.sh  
-        - script: sudo jfrog rt u IN/sample-script-012/gitRepo/echo.sh test-jfrog-ship
+        - script: IN/sample-testjf/gitRepo/echo.sh  
+        - script: sudo jfrog rt u IN/sample-testjf/gitRepo/echo.sh test-jfrog-ship
     flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard-tooltip-test-16
  
      
