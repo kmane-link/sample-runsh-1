@@ -11,7 +11,7 @@ jobs:
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-012/gitRepo/echo.sh  
-        - script: sudo jfrog rt u sample_file.tgz test-jfrog-ship
+        - script: sudo jfrog rt u IN/sample-script-012/gitRepo/echo.sh test-jfrog-ship
     flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard-tooltip-test-16
   - name: release-dev
     type: runSh
