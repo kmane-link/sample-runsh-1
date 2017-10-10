@@ -1,33 +1,8 @@
 triggers:
-  - name: trigger01
+  - name: trigger-jf
     type: trigger
     version:
       counter: 8
     flags: f1
     
-  - name: trigger02
-    type: trigger
-    version:
-      counter: 9
-    flags: f1
-    
-  - name: trigger03
-    type: trigger
-    version:
-      counter: 6
-  - name: trigger04
-    type: trigger
-    version:
-      counter: 502
-      
-  - name: trigger0
-    type: trigger
-    version:
-      counter: 0
-       
-    
  
- #   type: trigger
- #   version:
-   #   counter: 0
-   # flags: t2
