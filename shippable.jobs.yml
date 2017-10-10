@@ -6,6 +6,7 @@ jobs:
       - IN: sample-script-012
         showBuildStatus: true
       - IN: trigger01
+      - IN: test-jfrogartifactory
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-012/gitRepo/echo.sh
