@@ -1,156 +1,21 @@
 jobs:
-  - name: sample-runsh018
+  - name: sample-runsh-jf
     type: runSh
     allowPublicAccess: true
     steps:
-      - IN: sample-script-012
+      - IN: ssample-testjf
         showBuildStatus: true
       - IN: trigger01
-      - IN: test-jfrogartifactory
-      - IN: test-jfrogfile
+      - IN: test-cli-jfrog
+      #- IN: test-jfrogfile
     #  - IN: test-trigger01
       - TASK:
         - script: IN/sample-script-012/gitRepo/echo.sh  
         - script: sudo jfrog rt u IN/sample-script-012/gitRepo/echo.sh test-jfrog-ship
     flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard-tooltip-test-16
-  - name: release-dev
-    type: runSh
-    allowPublicAccess: false
-    steps:
-      - IN: sample-script-012
-      - IN: sample-runsh018
-      - IN: runcliscript
-      - IN: sample-runsh017
-      #- IN: testman1
-      
-     # - IN: trigger01
-    #  - IN: test-trigger01
-      - TASK:
-        - script: IN/sample-script-012/gitRepo/echo.sh  
-    flags: test-relese-flag
-        
-  - name: release-dev2
-    type: runSh
-    allowPublicAccess: false
-    steps:
-      - IN: sample-runsh-0
-      - IN: sample-runsh-1
-      - IN: sample-runsh-2
-      - IN: sample-script-012
-      #- IN: testman2
-      - OUT: sample_img
-     # - OUT: sample-runsh-out
-      
-     # - IN: trigger01
-    #  - IN: test-trigger01
-      - TASK:
-        - script: IN/sample-script-012/gitRepo/echo.sh  
-    flags: test-release-dev2
-  - name: runcliscript
-    type: runCLI
-    allowPublicAccess: false
-    steps:      
-      - IN: sample-script-011
-      - IN: trigger01
-      - TASK:
-        - script: IN/sample-script-011/gitRepo/echo.sh
-  - name: sample-runsh017
-    type: runSh
-    allowPublicAccess: false
-    steps:
-      - IN: sample-script-010
-        showBuildStatus: true
-      - IN: trigger01
-     # - IN: release-dev2
-    #  - IN: test-trigger01
-      - TASK:
-        - script: IN/sample-script-010/gitRepo/echo.sh
-        
-  - name: sample-runsh-out
-    type: runSh
-    allowPublicAccess: false
-    steps:
-      - IN: sample-script-010
-      - IN: release-dev2
-        showBuildStatus: true
-      - IN: trigger04
-    #  - IN: test-trigger01
-      - TASK:
-        - script: IN/sample-script-010/gitRepo/echo.sh
-        
-        
-  - name: sample-runsh-0
-    type: runSh
-    allowPublicAccess: false
-    steps:
-      - IN: sample-script-0
-        showBuildStatus: true
-      - IN: trigger03
-    #  - IN: test-trigger01
-      - TASK:
-        - script: IN/sample-script-0/gitRepo/echo.sh
-        - script: echo $SHIPPABLE_NODE_ARCHITECTURE
-        
-        
-  - name: sample-runsh-1
-    type: runSh
-    allowPublicAccess: false
-    steps:
-      - IN: sample-script-1
-        showBuildStatus: true
-      - IN: trigger03
-    #  - IN: test-trigger01
-      - TASK:
-        - script: IN/sample-script-1/gitRepo/echo.sh
-  - name: sample-runsh-2
-    type: runSh
-    allowPublicAccess: false
-    steps:
-      - IN: sample-script-2
-        showBuildStatus: true
-      - IN: trigger03
-    #  - IN: test-trigger01
-      - TASK:
-        - script: IN/sample-script-2/gitRepo/echo.sh 
-        
-        
-  #- name: testrepo_runCI      # required
-  #  type: runCI             # required
-  #  steps:                  # required
-  #    - IN: sample-script-010
-  #    - IN: release-dev # at least one IN or OUT required
-     # - OUT: <resourceName>
-        
-        
- # - name: tesrpr_runCI      # required
-  #  type: runCI             # required
-  #  steps:                  # required
-  #    - OUT: sample_img_out
-      
-      
-  - name: sample-runsh-test
-    type: runSh
-    steps:
-      - IN: sample_img_out
-      - IN: sample-script-2
-        showBuildStatus: true
-      #- IN: trigger03
-    #  - IN: test-trigger01
-      - TASK:
-        - script: IN/sample-script-2/gitRepo/echo.sh  
-    flags: test-sep27-add-new
-        
-  - name: sample-runsh-july26
-    type: runSh
-    allowPublicAccess: false
-    steps:
-      - IN: sample-script-010
-      - IN: release-dev2
-        showBuildStatus: true
-      - IN: trigger04
-    #  - IN: test-trigger01
-      - TASK:
-        - script: IN/sample-script-010/gitRepo/echo.sh
+ 
+     
+  
   
         
   
