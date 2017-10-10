@@ -1,5 +1,5 @@
 resources:
-  - name: sample-script-012
+  - name: sample-testjf
     type: gitRepo
     integration: github
     pointer:
@@ -9,55 +9,9 @@ resources:
       buildOnRelease: true                  #optional
       buildOnTagPush: true
     
-  - name: sample-script-011
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiptestlink/sample-script-2
-      branch: master
-    flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard
+  
       
-  - name: sample-script-010
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiptestlink/sample-script-1
-      branch: master
-  - name: test-trigger01
-    type: time
-    seed:
-      interval: "*/5 * * * *"
-    flags: t1
-  - name: test-trigger03
-    type: time
-    seed:
-      interval: "*/9 * * * *"
-    flags: t3
-  - name: sample-script-0
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiptestlink/sample-script-3
-      branch: master
-      buildOnPullRequest: true  
-      buildOnRelease: true                  #optional
-      buildOnTagPush: true
-      
-  - name: sample-script-1
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiptestlink/sample-script-2
-      branch: master
-      
-  - name: sample-script-2
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiptestlink/sample-script-1
-      branch: master
-      
-  - name: sample_img
+  - name: sample_img_jf
     type: image
     integration: ship-docker
     pointer:
@@ -66,34 +20,15 @@ resources:
       versionName: "deploy.2"
     flags: dont-create-version
       
+ 
       
-  - name: sample_img_out
-    type: image
-    integration: ship-docker
-    pointer:
-      sourceName: "shippabledocker/pipelinev2"
-    seed:
-      versionName: "latest"
-      
-      
-  - name: sample-test-sep27
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiptestlink/sample-script-2
-      branch: test1
-      
-  - name: ac-params
-    type: params
-    version:
-      params:
-        t1: updatecreatesversion-time  
+  
         
-  - name: test-jfrogartifactory
+  - name: test-cli-jfrog
     type: cliConfig
     integration: "test-jfrogartifactory"
     
-  - name: test-jfrogfile
+  - name: test-jfrogfiles
     type: file
     integration: test-jfrogartifactory
     pointer:
