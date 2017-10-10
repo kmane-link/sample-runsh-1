@@ -88,6 +88,10 @@ resources:
     version:
       params:
         t1: updatecreatesversion-time  
+        
+  - name: test-jfrogartifactory
+    type: cliConfig
+    integration: "test-jfrogartifactory"
    
  # - name: sample_img_dep
  #   type: image
