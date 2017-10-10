@@ -98,6 +98,8 @@ resources:
     integration: test-jfrogartifactory
     pointer:
       sourceName:  test-jfrog-ship/sample_file.tgz
+    seed:
+      versionName: sample_file
     
    
    
