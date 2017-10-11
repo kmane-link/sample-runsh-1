@@ -27,7 +27,8 @@ jobs:
       - IN: manifest-jfrog
         force: true
       - IN: test_node_cluster
-      #- TASK:
+      - TASK:
+        - script: sudo jfrog rt dl test-jfrog-ship/testgeneric.sh
        # - script: sudo rm -rf /opt/tomcat/webapps/HelloWorld.war
 
  
