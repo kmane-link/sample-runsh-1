@@ -1,5 +1,5 @@
 triggers:
-  - name: trigger-jf
+  - name: trigger-jf-new
     type: trigger
     version:
       counter: 8
