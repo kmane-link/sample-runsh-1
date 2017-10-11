@@ -35,6 +35,10 @@ resources:
       sourceName:  test-jfrog-ship/testgeneric.sh
     seed:
       versionName: sample_file
+      
+  - name: test_node_cluster
+    type: cluster
+    integration: test_node_cluster
     
    
    
