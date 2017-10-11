@@ -1,18 +1,18 @@
 jobs:
-  - name: sample-runsh-jf
+  - name: sample-runsh-jf-new
     type: runSh
     allowPublicAccess: true
     steps:
-      - IN: sample-testjf
+      - IN: sample-testjf-new
         showBuildStatus: true
       - IN: trigger-jf
-      - IN: test-cli-jfrog
+      - IN: test-cli-jfrog-new
       #- IN: test-jfrogfile
     #  - IN: test-trigger01
       - TASK:
-        - script: IN/sample-testjf/gitRepo/echo.sh  
-        - script: sudo jfrog rt u IN/sample-testjf/gitRepo/echo.sh test-jfrog-ship
-        - script: sudo jfrog rt dl test-jfrog-ship/echo.sh
+        - script: IN/sample-testjf-new/gitRepo/echo.sh  
+        - script: sudo jfrog rt u IN/sample-testjf-new/gitRepo/echo.sh test-jfrog-ship
+       # - script: sudo jfrog rt dl test-jfrog-ship/echo.sh
     flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard-tooltip-test-16
  
      
