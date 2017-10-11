@@ -12,7 +12,7 @@ jobs:
       - TASK:
         - script: IN/sample-testjf-new/gitRepo/echo.sh 
         - script: sudo jfrog rt u IN/sample-testjf-new/gitRepo/testgeneric.sh test-jfrog-ship
-       # - script: sudo jfrog rt dl test-jfrog-ship/echo.sh
+        - script: sudo jfrog rt dl test-jfrog-ship/echo.sh
     flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard-tooltip-test-16
  
      
