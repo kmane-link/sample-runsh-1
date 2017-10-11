@@ -26,8 +26,8 @@ jobs:
       - IN: manifest-jfrog-old
         force: true
       - IN: test_node_cluster-oldjf
-     #- TASK:
-       # - script: sudo jfrog rt dl test-jfrog-ship/testoct.sh
+      - TASK:
+        - script: sudo jfrog rt dl test-jfrog-ship/testoct.sh
   
   
         
