@@ -32,7 +32,7 @@ resources:
     type: file
     integration: test_jfrog_generic
     pointer:
-      sourceName:  test-jfrog-ship/sample_file.tgz
+      sourceName:  test-jfrog-ship/testgeneric.sh
     seed:
       versionName: sample_file
     
