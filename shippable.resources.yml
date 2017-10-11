@@ -38,6 +38,11 @@ resources:
   - name: test_node_cluster-oldjf
     type: cluster
     integration: test_node_cluster
+    
+  
+  - name: test-int-jfrog
+    type: integration
+    integration: test-jfrogartifactory
    
    
  # - name: sample_img_dep
