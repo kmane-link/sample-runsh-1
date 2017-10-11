@@ -5,7 +5,7 @@ jobs:
     steps:
       - IN: sample-testjf-new
         showBuildStatus: true
-      - IN: trigger-jf
+      - IN: trigger-jf-new
       - IN: test-cli-jfrog-new
       #- IN: test-jfrogfile
     #  - IN: test-trigger01
