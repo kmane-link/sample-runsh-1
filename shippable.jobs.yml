@@ -15,7 +15,19 @@ jobs:
         - script: sudo jfrog rt dl test-jfrog-ship/echo.sh
     flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard-tooltip-test-16
  
-     
+  - name: manifest-jfrog-old
+    type: manifest
+    steps:
+      - IN: test-jfrogfiles
+      
+  - name: deploy-jfrog-old
+    type: deploy
+    steps:
+      - IN: manifest-jfrog-pld
+        force: true
+      - IN: test_node_cluster-oldjf
+     #- TASK:
+       # - script: sudo jfrog rt dl test-jfrog-ship/testoct.sh
   
   
         
