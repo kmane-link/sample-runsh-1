@@ -30,5 +30,17 @@ jobs:
         - script: sudo jfrog rt dl test-jfrog-ship/testoct.sh
   
   
-        
+  - name: sample-runsh-jf-int
+    type: runSh
+    allowPublicAccess: true
+    steps:
+      - IN: sample-testjf
+        showBuildStatus: true
+      - IN: trigger-jf
+      - IN: test-int-jfrog
+      #- IN: test-jfrogfile
+    #  - IN: test-trigger01
+      - TASK:
+        - script: IN/sample-testjf/gitRepo/echo.sh  
+        - script: sudo jfrog rt u IN/sample-testjf/gitRepo/echo.sh test-jfrog-ship 
   
