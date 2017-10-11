@@ -23,7 +23,7 @@ jobs:
   - name: deploy-jfrog-old
     type: deploy
     steps:
-      - IN: manifest-jfrog-pld
+      - IN: manifest-jfrog-old
         force: true
       - IN: test_node_cluster-oldjf
      #- TASK:
