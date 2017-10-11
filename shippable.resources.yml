@@ -1,5 +1,5 @@
 resources:
-  - name: sample-testjf
+  - name: sample-testjf-new
     type: gitRepo
     integration: github
     pointer:
@@ -11,7 +11,7 @@ resources:
     
   
       
-  - name: sample_img_jf
+  - name: sample_img_jf-new
     type: image
     integration: ship-docker
     pointer:
@@ -24,13 +24,13 @@ resources:
       
   
         
-  - name: test-cli-jfrog
+  - name: test-cli-jfrog-new
     type: cliConfig
-    integration: "test-jfrogartifactory"
+    integration: "test_jfrog_generic"
     
-  - name: test-jfrogfiles
+  - name: test-jfrogfiles-new
     type: file
-    integration: test-jfrogartifactory
+    integration: test_jfrog_generic
     pointer:
       sourceName:  test-jfrog-ship/sample_file.tgz
     seed:
