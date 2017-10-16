@@ -20,7 +20,7 @@ jobs:
     type: manifest
     steps:
       - IN: test-jfrogfiles-new
-    flags: foo
+   # flags: foo
       
   - name: deploy-jfrog
     type: deploy
@@ -31,7 +31,7 @@ jobs:
       - TASK:
         - script: sudo jfrog rt dl test-jfrog-ship/testgeneric.sh
        # - script: sudo rm -rf /opt/tomcat/webapps/HelloWorld.war
-    flags: foo
+   # flags: foo
  
      
   
