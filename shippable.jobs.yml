@@ -13,13 +13,14 @@ jobs:
         - script: IN/sample-testjf-new/gitRepo/echo.sh 
         - script: sudo jfrog rt u IN/sample-testjf-new/gitRepo/testgeneric.sh test-jfrog-ship
         - script: sudo jfrog rt dl test-jfrog-ship/echo.sh
-    flags: test-very-long-flagname-shows-in-the-subscription-and-custom-dashboard-tooltip-test-16
+    flags: foo
     
     
   - name: manifest-jfrog
     type: manifest
     steps:
       - IN: test-jfrogfiles-new
+    flags: foo
       
   - name: deploy-jfrog
     type: deploy
@@ -30,7 +31,7 @@ jobs:
       - TASK:
         - script: sudo jfrog rt dl test-jfrog-ship/testgeneric.sh
        # - script: sudo rm -rf /opt/tomcat/webapps/HelloWorld.war
-
+    flags: foo
  
      
   
