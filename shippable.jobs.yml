@@ -13,7 +13,7 @@ jobs:
         - script: IN/sample-testjf/gitRepo/echo.sh  
         - script: sudo jfrog rt u IN/sample-testjf/gitRepo/echo.sh test-jfrog-ship
         - script: sudo jfrog rt dl test-jfrog-ship/echo.sh
-    flags: far
+   # flags: far
  
   - name: manifest-jfrog-old
     type: manifest
