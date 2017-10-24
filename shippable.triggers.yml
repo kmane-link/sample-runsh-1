@@ -1,5 +1,5 @@
 triggers:
-  - name: trigger-docker
+  - name: trigger-dockerRegistry
     type: trigger
     version:
       counter: 8
