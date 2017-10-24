@@ -32,3 +32,17 @@ resources:
     seed:
       versionName: "latest"
       
+      
+  - name: ddc_cluster
+    type: cluster
+    integration: ship-ddc
+    pointer:
+      sourceName : "nothing"
+    flags: ddc_cluster  
+    
+  - name: ddc_dopts
+    type: dockerOptions
+    version:
+      memory: 128
+    flags: ddc_options  
+      
