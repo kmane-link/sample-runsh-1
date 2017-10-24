@@ -44,7 +44,7 @@ jobs:
         - script: echo $SAMPLE_IMG_DOCKER_INTEGRATION_EMAIL
         
         
-  - name: manifest_dep
+  - name: manifest_docker
     type: manifest
     steps:
       - IN: sample-runsh-docker-image
@@ -53,7 +53,7 @@ jobs:
   - name: docker_deploy
     type: deploy
     steps:
-      - IN: manifest_dep
+      - IN: manifest_docker
       - IN: ddc_cluster
       - IN: ddc_dopts
       #- IN: env-tripub
