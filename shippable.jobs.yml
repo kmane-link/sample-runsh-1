@@ -48,7 +48,7 @@ jobs:
   - name: manifest_docker
     type: manifest
     steps:
-      - IN: sample-runsh-docker-image
+      - IN: sample_img_docker
       
       
   - name: docker_deploy
