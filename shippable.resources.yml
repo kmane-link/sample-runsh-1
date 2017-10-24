@@ -1,5 +1,5 @@
 resources:
-  - name: sample-testjf
+  - name: sample-test-script-docker
     type: gitRepo
     integration: github
     pointer:
@@ -10,39 +10,12 @@ resources:
       buildOnTagPush: true
     
   
-      
-  - name: sample_img_jf
-    type: image
-    integration: ship-docker
-    pointer:
-      sourceName: "shippabledocker/pipelinev2"
-    seed:
-      versionName: "deploy.2"
-    flags: dont-create-version
-      
- 
-      
-  
-        
-  - name: test-cli-jfrog
+  - name: test-cli-docker-new
     type: cliConfig
-    integration: "test-jfrogartifactory"
+    integration: "ship-docker-new"
     
-  - name: test-jfrogfiles
-    type: file
-    integration: test-jfrogartifactory
-    pointer:
-      sourceName:  test-jfrog-ship/testoct.sh
-    seed:
-      versionName: sample_file
-  - name: test_node_cluster-oldjf
-    type: cluster
-    integration: test_node_cluster
-    
-  
-  - name: test-int-jfrog
-    type: integration
-    integration: test-jfrogartifactory
+ 
+ 
    
    
  # - name: sample_img_dep
