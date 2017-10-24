@@ -37,7 +37,7 @@ jobs:
       - IN: sample-test-script-docker
         showBuildStatus: true
       - IN: sample_img_docker
-      - TASK: managed
+      
      
       - TASK:
         - script: echo $SAMPLE_IMG_DOCKER_INTEGRATION_USERNAME
@@ -57,4 +57,5 @@ jobs:
       - IN: manifest_docker
       - IN: ddc_cluster
       - IN: ddc_dopts
+      - TASK: managed
       #- IN: env-tripub
