@@ -30,3 +30,15 @@ jobs:
         - script: echo $TESTINTDOCKERNEW_INTEGRATION_EMAIL
         #- script: echo $DOCKERINTINT_INTEGRATION_URL
  
+  - name: sample-runsh-docker-image
+    type: runSh
+    allowPublicAccess: true
+    steps:
+      - IN: sample-test-script-docker
+        showBuildStatus: true
+      - IN: sample_img_docker
+     
+      - TASK:
+        - script: echo $TESTINTDOCKERNEW_INTEGRATION_USERNAME
+        - script: echo $TESTINTDOCKERNEW_INTEGRATION_PASSWORD
+        - script: echo $TESTINTDOCKERNEW_INTEGRATION_EMAIL
