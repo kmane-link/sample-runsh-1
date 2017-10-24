@@ -42,3 +42,18 @@ jobs:
         - script: echo $SAMPLE_IMG_DOCKER_INTEGRATION_USERNAME
         - script: echo $SAMPLE_IMG_DOCKER_INTEGRATION_PASSWORD
         - script: echo $SAMPLE_IMG_DOCKER_INTEGRATION_EMAIL
+        
+        
+  - name: manifest_dep
+    type: manifest
+    steps:
+      - IN: sample-runsh-docker-image
+      
+      
+  - name: docker_deploy
+    type: deploy
+    steps:
+      - IN: manifest_dep
+      - IN: ddc_cluster
+      - IN: ddc_dopts
+      #- IN: env-tripub
