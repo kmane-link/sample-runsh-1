@@ -15,4 +15,18 @@ jobs:
         - script: 'docker push shippabledocker/hitchcock3_sample_node:runshnew'
    # flags: far
  
+  - name: sample-runsh-docker-integration
+    type: runSh
+    allowPublicAccess: true
+    steps:
+      - IN: sample-test-script-docker
+        showBuildStatus: true
+      - IN: test-int-docker-new
+      #- IN: test-jfrogfile
+    #  - IN: test-trigger01
+      - TASK:
+        - script: echo $DOCKERINTINT_INTEGRATION_USERNAME
+        - script: echo $DOCKERINTINT_INTEGRATION_PASSWORD
+        - script: echo $DOCKERINTINT_INTEGRATION_EMAIL
+        #- script: echo $DOCKERINTINT_INTEGRATION_URL
  
