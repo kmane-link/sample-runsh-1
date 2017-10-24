@@ -37,6 +37,7 @@ jobs:
       - IN: sample-test-script-docker
         showBuildStatus: true
       - IN: sample_img_docker
+      - TASK: managed
      
       - TASK:
         - script: echo $SAMPLE_IMG_DOCKER_INTEGRATION_USERNAME
