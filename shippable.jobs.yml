@@ -30,7 +30,7 @@ jobs:
         - script: echo $TESTINTDOCKERREGISTRY_INTEGRATION_EMAIL
         - script: echo $TESTINTDOCKERREGISTRY_INTEGRATION_URL
  
-  - name: sample-runsh-docker-image
+  - name: sample-runsh-dockerRegistry-image
     type: runSh
     allowPublicAccess: true
     steps:
