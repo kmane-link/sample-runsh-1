@@ -39,6 +39,6 @@ jobs:
       - IN: sample_img_docker
      
       - TASK:
-        - script: echo $TESTINTDOCKERNEW_INTEGRATION_USERNAME
-        - script: echo $TESTINTDOCKERNEW_INTEGRATION_PASSWORD
-        - script: echo $TESTINTDOCKERNEW_INTEGRATION_EMAIL
+        - script: echo $SAMPLEIMGDOCKER_INTEGRATION_USERNAME
+        - script: echo $SAMPLEIMGDOCKER_INTEGRATION_PASSWORD
+        - script: echo $SAMPLEIMGDCOKER_INTEGRATION_EMAIL
