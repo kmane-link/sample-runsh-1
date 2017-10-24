@@ -16,6 +16,12 @@ resources:
     
  
  
+  - name: test-int-docker-new
+    type: integration
+    integration: ship-docker-new
+    
+ 
+ 
    
    
  # - name: sample_img_dep
