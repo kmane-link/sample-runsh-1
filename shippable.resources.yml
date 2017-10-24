@@ -13,10 +13,7 @@ resources:
   - name: test-cli-docker-new
     type: cliConfig
     integration: "ship-docker-new"
-  - name: test-cli-dockerRegistry
-    type: cliConfig
-    integration: "ship-dockerRegistry"
-    
+
  
  
   - name: test-int-docker-new
