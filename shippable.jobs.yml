@@ -1,46 +1,18 @@
 jobs:
-  - name: sample-runsh-jf
+  - name: sample-runsh-docker
     type: runSh
     allowPublicAccess: true
     steps:
-      - IN: sample-testjf
+      - IN: sample-test-script-docker
         showBuildStatus: true
-      - IN: trigger-jf
-      - IN: test-cli-jfrog
+      - IN: test-cli-docker-new
       #- IN: test-jfrogfile
     #  - IN: test-trigger01
       - TASK:
-        - script: IN/sample-testjf/gitRepo/echo.sh  
-        - script: sudo jfrog rt u IN/sample-testjf/gitRepo/echo.sh test-jfrog-ship
-        - script: sudo jfrog rt dl test-jfrog-ship/echo.sh
+        - script: 'cd /build/IN/sample-script-pus/gitRepo'
+        - script: 'docker pull shippabledocker/sample_node_pvt'
+        - script: 'docker build -t=shippabledocker/hitchcock3_sample_node:runshnew  .'
+        - script: 'docker push shippabledocker/hitchcock3_sample_node:runshnew'
    # flags: far
  
-  - name: manifest-jfrog-old
-    type: manifest
-    steps:
-      - IN: test-jfrogfiles
-      
-  - name: deploy-jfrog-old
-    type: deploy
-    steps:
-      - IN: manifest-jfrog-old
-        force: true
-      - IN: test_node_cluster-oldjf
-      - TASK:
-        - script: sudo jfrog rt dl test-jfrog-ship/testoct.sh
-  
-  
-  - name: sample-runsh-jf-int
-    type: runSh
-    allowPublicAccess: true
-    steps:
-      - IN: sample-testjf
-        showBuildStatus: true
-      - IN: trigger-jf
-      - IN: test-int-jfrog
-      #- IN: test-jfrogfile
-    #  - IN: test-trigger01
-      - TASK:
-        - script: IN/sample-testjf/gitRepo/echo.sh  
-        - script: sudo jfrog rt u IN/sample-testjf/gitRepo/echo.sh test-jfrog-ship 
-  
+ 
