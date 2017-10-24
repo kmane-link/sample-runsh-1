@@ -1,8 +1,8 @@
 triggers:
-  - name: trigger-jf
+  - name: trigger-docker
     type: trigger
     version:
       counter: 8
-    flags: f1
+   
     
  
