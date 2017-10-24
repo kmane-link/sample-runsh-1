@@ -25,8 +25,8 @@ jobs:
       #- IN: test-jfrogfile
     #  - IN: test-trigger01
       - TASK:
-        - script: echo $DOCKERINTINT_INTEGRATION_USERNAME
-        - script: echo $DOCKERINTINT_INTEGRATION_PASSWORD
-        - script: echo $DOCKERINTINT_INTEGRATION_EMAIL
+        - script: echo $TESTINTDOCKERNEW_INTEGRATION_USERNAME
+        - script: echo $TESTINTDOCKERNEW_INTEGRATION_PASSWORD
+        - script: echo $TESTINTDOCKERNEW_INTEGRATION_EMAIL
         #- script: echo $DOCKERINTINT_INTEGRATION_URL
  
