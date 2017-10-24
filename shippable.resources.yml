@@ -1,5 +1,5 @@
 resources:
-  - name: sample-test-script-docker
+  - name: sample-test-script-dockerRegistry
     type: gitRepo
     integration: github
     pointer:
@@ -10,15 +10,17 @@ resources:
       buildOnTagPush: true
     
   
-  - name: test-cli-docker-new
+  - name: test-cli-dockerRegistry
     type: cliConfig
-    integration: "ship-docker-new"
+    integration: "ship-dockerRegistry"
     
  
  
-  - name: test-int-docker-new
+  - name: test-int-dockerRegistry
     type: integration
-    integration: ship-docker-new
+    integration: ship-dockerRegistry
+    
+    
     
  
  
@@ -26,21 +28,21 @@ resources:
    
   - name: sample_img_docker
     type: image
-    integration: ship-docker-new
+    integration: ship-dockerRegistry
     pointer:
       sourceName: "shippabledocker/sample-node-test"
     seed:
       versionName: "latest"
       
       
-  - name: ddc_cluster
+  - name: ddc_cluster-1
     type: cluster
     integration: ship-ddc
     pointer:
       sourceName : "nothing"
     flags: ddc_cluster  
     
-  - name: ddc_dopts
+  - name: ddc_dopts-1
     type: dockerOptions
     version:
       memory: 128
