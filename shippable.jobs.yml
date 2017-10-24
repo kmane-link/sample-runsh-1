@@ -1,34 +1,34 @@
 jobs:
-  - name: sample-runsh-docker
+  - name: sample-runsh-dockerRegistry
     type: runSh
     allowPublicAccess: true
     steps:
-      - IN: sample-test-script-docker
+      - IN: sample-test-script-dockerRegistry
         showBuildStatus: true
-      - IN: test-cli-docker-new
+      - IN: test-cli-dockerRegistry
       #- IN: test-jfrogfile
     #  - IN: test-trigger01
       - TASK:
-        - script: 'cd /build/IN/sample-test-script-docker/gitRepo'
-        - script: 'docker pull shippabledocker/sample_node_pvt'
-        - script: 'docker build -t=shippabledocker/hitchcock3_sample_node:runshnew  .'
-        - script: 'docker push shippabledocker/hitchcock3_sample_node:runshnew'
+        - script: 'cd /build/IN/sample-test-script-dockerRegistry/gitRepo'
+        - script: 'docker pull quay.io/revathird/samplenode_test'
+        - script: 'docker build -t=quay.io/revathird/samplenode_test:dri  .'
+        - script: 'docker push quay.io/revathird/samplenode_test:dri'
    # flags: far
  
-  - name: sample-runsh-docker-integration
+  - name: sample-runsh-dockerRegistry-integration
     type: runSh
     allowPublicAccess: true
     steps:
-      - IN: sample-test-script-docker
+      - IN: sample-test-script-dockerRegistry
         showBuildStatus: true
-      - IN: test-int-docker-new
+      - IN: test-int-dockerRegistry
       #- IN: test-jfrogfile
     #  - IN: test-trigger01
       - TASK:
-        - script: echo $TESTINTDOCKERNEW_INTEGRATION_USERNAME
-        - script: echo $TESTINTDOCKERNEW_INTEGRATION_PASSWORD
-        - script: echo $TESTINTDOCKERNEW_INTEGRATION_EMAIL
-        #- script: echo $DOCKERINTINT_INTEGRATION_URL
+        - script: echo $TESTINTDOCKERREGISTRY_INTEGRATION_USERNAME
+        - script: echo $TESTINTDOCKERREGISTRY_INTEGRATION_PASSWORD
+        - script: echo $TESTINTDOCKERREGISTRY_INTEGRATION_EMAIL
+        - script: echo $TESTINTDOCKERREGISTRY_INTEGRATION_URL
  
   - name: sample-runsh-docker-image
     type: runSh
@@ -36,26 +36,27 @@ jobs:
     steps:
       - IN: sample-test-script-docker
         showBuildStatus: true
-      - IN: sample_img_docker
+      - IN: sample_img_dockerRegistry
       
      
       - TASK:
-        - script: echo $SAMPLE_IMG_DOCKER_INTEGRATION_USERNAME
-        - script: echo $SAMPLE_IMG_DOCKER_INTEGRATION_PASSWORD
-        - script: echo $SAMPLE_IMG_DOCKER_INTEGRATION_EMAIL
+        - script: echo $SAMPLE_IMG_DOCKERREGISTRY_INTEGRATION_USERNAME
+        - script: echo $SAMPLE_IMG_DOCKERREGISTRY_INTEGRATION_PASSWORD
+        - script: echo $SAMPLE_IMG_DOCKERREGISTRY_INTEGRATION_EMAIL
+        - script: echo $SAMPLE_IMG_DOCKERREGISTRY_INTEGRATION_URL
         
         
-  - name: manifest_docker
+  - name: manifest_dockerRegistry
     type: manifest
     steps:
-      - IN: sample_img_docker
+      - IN: sample_img_dockerRegistry
       
       
-  - name: docker_deploy
+  - name: dockerRegistry_deploy
     type: deploy
     steps:
-      - IN: manifest_docker
-      - IN: ddc_cluster
-      - IN: ddc_dopts
+      - IN: manifest_dockerRegistry
+      - IN: ddc_cluster-1
+      - IN: ddc_dopts-1
       - TASK: managed
       #- IN: env-tripub
