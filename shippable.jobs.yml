@@ -9,7 +9,7 @@ jobs:
       #- IN: test-jfrogfile
     #  - IN: test-trigger01
       - TASK:
-        - script: 'cd /build/IN/sample-script-pus/gitRepo'
+        - script: 'cd /build/IN/sample-test-script-docker/gitRepo'
         - script: 'docker pull shippabledocker/sample_node_pvt'
         - script: 'docker build -t=shippabledocker/hitchcock3_sample_node:runshnew  .'
         - script: 'docker push shippabledocker/hitchcock3_sample_node:runshnew'
