@@ -40,6 +40,9 @@ resources:
     type: cluster
     integration: test_node_cluster
     
+  - name: test-deepika-nc
+    type: cluster
+    integration: deepika-nc
    
    
  # - name: sample_img_dep
