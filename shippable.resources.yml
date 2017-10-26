@@ -42,7 +42,7 @@ resources:
     
   - name: test-deepika-nc
     type: cluster
-    integration: deepika-nc
+    integration: deepika-nc-1
    
    
  # - name: sample_img_dep
