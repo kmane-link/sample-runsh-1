@@ -30,7 +30,7 @@ jobs:
   - name: deploy-deepika
     type: deploy
     steps:
-      - IN: manifest-deepika
+      - IN: manifest-jfrog
         force: true
       - IN: test-deepika-nc
  
