@@ -32,7 +32,7 @@ resources:
     type: file
     integration: test_jfrog_generic
     pointer:
-      sourceName:  test-jfrog-ship/testgeneric.sh
+      sourceName:  test-jfrog-ship/echo.sh
     seed:
       versionName: sample_file
       
