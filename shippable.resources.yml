@@ -1,17 +1,6 @@
 resources:
-  - name: sample-testjf-new
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiptestlink/sample-script-3
-      branch: master
-      buildOnPullRequest: true  
-      buildOnRelease: true                  #optional
-      buildOnTagPush: true
-    
   
-      
-  - name: sample_img_jf-new
+  - name: sample_img_jf-new-d
     type: image
     integration: ship-docker
     pointer:
@@ -19,27 +8,10 @@ resources:
     seed:
       versionName: "deploy.2"
     flags: dont-create-version
-      
- 
-      
-  
-        
-  - name: test-cli-jfrog-new
-    type: cliConfig
-    integration: "test_jfrog_generic"
-    
-  - name: test-jfrogfiles-new
-    type: file
-    integration: test_jfrog_generic
-    pointer:
-      sourceName:  test-jfrog-ship/testgeneric.sh
-    seed:
-      versionName: sample_file
-      
-  - name: test_node_cluster
+
+  - name: deepikanc
     type: cluster
-    integration: test_node_cluster
-    
+    integration: deepika-nc
    
    
  # - name: sample_img_dep
