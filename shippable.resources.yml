@@ -20,7 +20,7 @@ resources:
       versionName: latest
       
  
- - name: sample_img_jf-new
+  - name: sample_img_jf-new
     type: image
     integration: ship-docker
     pointer:
