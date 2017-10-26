@@ -22,6 +22,13 @@ jobs:
       - IN: test-jfrogfiles-new
     flags: foo
       
+  - name: deploy-deepika
+    type: deploy
+    steps:
+      - IN: manifest-jfrog
+        force: true
+      - IN: test-deepika-nc
+ 
   - name: deploy-jfrog
     type: deploy
     steps:
