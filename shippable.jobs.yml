@@ -26,6 +26,13 @@ jobs:
     type: manifest
     steps:
       - IN: deepika-image
+      
+  - name: deploy-test-newnode
+    type: deploy
+    steps:
+      - IN: manifest-jfrog
+        force: true
+      - IN: test_newnode_cluster
  
   - name: deploy-deepika
     type: deploy
