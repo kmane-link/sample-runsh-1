@@ -46,6 +46,9 @@ resources:
   - name: test_node_cluster
     type: cluster
     integration: test_node_cluster
+  - name: test_node_cluster
+    type: cluster
+    integration: test-new-node-cluster
     
   - name: test-deepika-nc
     type: cluster
