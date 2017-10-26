@@ -11,7 +11,16 @@ resources:
     
   
       
-  - name: sample_img_jf-new
+  - name: deepika-image
+    type: image
+    integration: deepika-docker
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
+      
+ 
+ - name: sample_img_jf-new
     type: image
     integration: ship-docker
     pointer:
@@ -19,8 +28,6 @@ resources:
     seed:
       versionName: "deploy.2"
     flags: dont-create-version
-      
- 
       
   
         
