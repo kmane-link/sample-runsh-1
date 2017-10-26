@@ -22,10 +22,15 @@ jobs:
       - IN: test-jfrogfiles-new
     flags: foo
       
+  - name: manifest-deepika
+    type: manifest
+    steps:
+      - IN: deepika-image
+ 
   - name: deploy-deepika
     type: deploy
     steps:
-      - IN: manifest-jfrog
+      - IN: manifest-deepika
         force: true
       - IN: test-deepika-nc
  
