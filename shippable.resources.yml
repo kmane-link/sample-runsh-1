@@ -45,8 +45,9 @@ resources:
       
   - name: test_node_cluster
     type: cluster
-    integration: test_newnode_cluster
-  - name: test_node_cluster
+    integration: test_node_cluster
+  
+  - name: test_newnode_cluster
     type: cluster
     integration: test-new-node-cluster
     
