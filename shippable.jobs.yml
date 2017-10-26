@@ -1,35 +1,21 @@
 jobs:
-  - name: sample-runsh-jf-new
-    type: runSh
-    allowPublicAccess: true
-    steps:
-      - IN: sample-testjf-new
-        showBuildStatus: true
-      - IN: trigger-jf-new
-      - IN: test-cli-jfrog-new
-      #- IN: test-jfrogfile
-    #  - IN: test-trigger01
-      - TASK:
-        - script: IN/sample-testjf-new/gitRepo/echo.sh 
-        - script: sudo jfrog rt u IN/sample-testjf-new/gitRepo/testgeneric.sh test-jfrog-ship
-        - script: sudo jfrog rt dl test-jfrog-ship/echo.sh
-    flags: bar
+  
     
-    
-  - name: manifest-jfrog
+  - name: manifest-d
     type: manifest
     steps:
-      - IN: test-jfrogfiles-new
+      - IN: sample_img_jf-new-d
     flags: foo
       
-  - name: deploy-jfrog
+  - name: deploy-d
     type: deploy
     steps:
-      - IN: manifest-jfrog
+      - IN: manifest-d
         force: true
-      - IN: test_node_cluster
+      - IN: deepikanc
       - TASK:
-        - script: sudo jfrog rt dl test-jfrog-ship/testgeneric.sh
+        - script: echo "hello"
+        #- script: sudo jfrog rt dl test-jfrog-ship/testgeneric.sh
        # - script: sudo rm -rf /opt/tomcat/webapps/HelloWorld.war
     flags: foo
  
