@@ -45,17 +45,4 @@ jobs:
         - script: echo $SAMPLE_IMG_DOCKER_INTEGRATION_EMAIL
         
         
-  - name: manifest_docker
-    type: manifest
-    steps:
-      - IN: sample_img_docker
-      
-      
-  - name: docker_deploy
-    type: deploy
-    steps:
-      - IN: manifest_docker
-      - IN: ddc_cluster
-      - IN: ddc_dopts
-      - TASK: managed
-      #- IN: env-tripub
+  
