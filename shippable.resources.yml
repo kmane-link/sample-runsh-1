@@ -8,6 +8,8 @@ resources:
       buildOnPullRequest: true  
       buildOnRelease: true                  #optional
       buildOnTagPush: true
-    
+  - name: test-cli-dockerRegistry
+    type: cliConfig
+    integration: "ship-dockerRegistry"
   
  
