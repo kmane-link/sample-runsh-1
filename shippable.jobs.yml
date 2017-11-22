@@ -5,13 +5,13 @@ jobs:
     steps:
       - IN: sample-test-script-docker
         showBuildStatus: true
-      #- IN: test-cli-docker-new
+      - IN: test-cli-dockerRegistry
       #- IN: test-jfrogfile
     #  - IN: test-trigger01
       - TASK:
         - script: 'IN/sample-test-script-docker/gitRepo/echo.sh' 
 
-        #- script: 'docker pull shippabledocker/sample_node_pvt'
+        - script: 'docker pull shippabledocker/sample_node_pvt'
         ##- script: 'docker build -t=shippabledocker/hitchcock3_sample_node:runshnew  .'
         #- script: 'docker push shippabledocker/hitchcock3_sample_node:runshnew'
    # flags: far
