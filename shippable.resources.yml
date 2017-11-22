@@ -10,39 +10,4 @@ resources:
       buildOnTagPush: true
     
   
-  - name: test-cli-docker-new
-    type: cliConfig
-    integration: "ship-docker-new"
-
  
- 
-  - name: test-int-docker-new
-    type: integration
-    integration: ship-docker-new
-    
- 
- 
-   
-   
-  - name: sample_img_docker
-    type: image
-    integration: ship-docker-new
-    pointer:
-      sourceName: "shippabledocker/sample-node-test"
-    seed:
-      versionName: "latest"
-      
-      
-  - name: ddc_cluster
-    type: cluster
-    integration: ship-ddc
-    pointer:
-      sourceName : "nothing"
-    flags: ddc_cluster  
-    
-  - name: ddc_dopts
-    type: dockerOptions
-    version:
-      memory: 128
-    flags: ddc_options  
-      
